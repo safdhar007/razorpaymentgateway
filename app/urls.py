@@ -1,10 +1,11 @@
 
-from django.urls import re_path
-from . import views
-from django.urls import path, re_path
 
+from django.contrib import admin
+from django.urls import path
+from app import views
+ 
 urlpatterns = [
-	path('', views.homepage, name='index'),
-
+    path('', views.homepage, name='index'),
+    path('paymenthandler/', views.paymenthandler, name='paymenthandler'),
 
 ]
